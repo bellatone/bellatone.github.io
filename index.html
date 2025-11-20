@@ -246,6 +246,27 @@
             box-shadow: 0 8px 30px rgba(0,0,0,0.4);
         }
 
+        .whatsapp-button {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            color: white;
+        }
+
         footer {
             background: #3d2817;
             color: #f4e4c1;
@@ -312,6 +333,14 @@
             cursor: pointer;
             margin-top: 1rem;
         }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
     </style>
 </head>
 <body>
@@ -354,7 +383,13 @@
         <section id="home" class="hero">
             <h2>Sabor que Derrete na Boca</h2>
             <p>Nossos chocotones são feitos artesanalmente, com ingredientes selecionados e muito chocolate de qualidade. Cada mordida é uma experiência única que celebra a tradição e o sabor irresistível do verdadeiro chocotone.</p>
-            <button class="cta-button" id="pedidoButton">Faça seu Pedido</button>
+            
+            <div class="button-group">
+                <button class="cta-button" id="pedidoButton">Ver QR Code</button>
+                <a href="https://wa.me/5571991416423?text=Olá! Gostaria de fazer um pedido de chocotones." class="whatsapp-button" target="_blank">
+                    📱 Pedir pelo WhatsApp
+                </a>
+            </div>
         </section>
 
         <section id="produtos">
@@ -363,30 +398,45 @@
                     <img src="https://raw.githubusercontent.com/milychocotones-oss/chocotones-imagens/main/Chocotone%20Tradicional.jpeg" alt="Chocotone Tradicional" class="product-image">
                     <h3>Chocotone Clássico</h3>
                     <p>Nossa receita tradicional com gotas generosas de chocolate ao leite e massa fofinha que derrete na boca. Valor R$ 5,00.</p>
+                    <a href="https://wa.me/5571991416423?text=Olá! Gostaria de pedir o Chocotone Clássico." class="whatsapp-button" target="_blank" style="margin-top: 1rem;">
+                        Pedir Este
+                    </a>
                 </div>
 
                 <div class="product-card">
                     <img src="https://raw.githubusercontent.com/milychocotones-oss/chocotones-imagens/main/Chocotone%20trufado.jpeg" alt="Chocotone Trufado" class="product-image">
                     <h3>Chocotone Trufado</h3>
                     <p>Recheado com brigadeiro feito com chocolate 50% e com cobertura blend, contém 140g. Uma experiência gourmet inesquecível. Valor R$ 8,00.</p>
+                    <a href="https://wa.me/5571991416423?text=Olá! Gostaria de pedir o Chocotone Trufado." class="whatsapp-button" target="_blank" style="margin-top: 1rem;">
+                        Pedir Este
+                    </a>
                 </div>
 
                 <div class="product-card">
                     <img src="https://raw.githubusercontent.com/milychocotones-oss/chocotones-imagens/main/Panetone%20grande%20tradicional%20com%20moldura%20.jpeg" alt="Chocotone Tamanho Especial Tradicional" class="product-image">
                     <h3>Chocotone Tamanho Especial Tradicional</h3>
                     <p>Com 300 gramas, nosso tradicional tamanho especial com gotas generosas de chocolate ao leite. Valor R$ 14,50.</p>
+                    <a href="https://wa.me/5571991416423?text=Olá! Gostaria de pedir o Chocotone Tamanho Especial Tradicional." class="whatsapp-button" target="_blank" style="margin-top: 1rem;">
+                        Pedir Este
+                    </a>
                 </div>
 
                 <div class="product-card">
                     <img src="https://raw.githubusercontent.com/milychocotones-oss/chocotones-imagens/main/Panetone%20grande%20trufado%20com%20moldura.jpeg" alt="Chocotone Tamanho Especial Trufado" class="product-image">
                     <h3>Chocotone Tamanho Especial Trufado</h3>
                     <p>Recheado com brigadeiro feito com chocolate 50% e com cobertura blend, contém 400g. Valor R$ 22,00.</p>
+                    <a href="https://wa.me/5571991416423?text=Olá! Gostaria de pedir o Chocotone Tamanho Especial Trufado." class="whatsapp-button" target="_blank" style="margin-top: 1rem;">
+                        Pedir Este
+                    </a>
                 </div>
 
                 <div class="product-card">
                     <img src="https://raw.githubusercontent.com/milychocotones-oss/chocotones-imagens/main/Sacolina%20de%20Natal.jpeg" alt="Sacolinha de Natal" class="product-image">
                     <h3>Sacolinha de Natal</h3>
                     <p>Sacolinha especial para embalar seu chocotone pequeno. Perfeita para presentear! Valor R$ 1,50.</p>
+                    <a href="https://wa.me/5571991416423?text=Olá! Gostaria de pedir a Sacolinha de Natal." class="whatsapp-button" target="_blank" style="margin-top: 1rem;">
+                        Pedir Este
+                    </a>
                 </div>
             </div>
         </section>
@@ -400,6 +450,9 @@
             <h2>Entre em Contato</h2>
             <p>📱 WhatsApp: (71) 99141-6423</p>
             <p>📧 Email: bellatone25@gmail.com</p>
+            <a href="https://wa.me/5571991416423?text=Olá! Gostaria de mais informações sobre os chocotones." class="whatsapp-button" target="_blank">
+                📱 Falar no WhatsApp
+            </a>
         </section>
     </div>
 
@@ -453,6 +506,4 @@
         });
     </script>
 </body>
-
 </html>
-
